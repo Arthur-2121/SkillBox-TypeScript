@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="ru"><head><link rel="stylesheet" href="/photo-cropper.9f367d21.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Cropper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css">
+    <link rel="stylesheet" href="/photo-cropper.4d663569.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Photo Cropper</h1>
+
+        <div class="upload-section">
+            <input type="file" id="fileInput" accept="image/*">
+            <label for="fileInput" class="btn">Выбрать изображение</label>
+        </div>
+
+        <div class="editor-section">
+            <div class="original-image">
+                <!-- Добавляем прозрачный плейсхолдер вместо пустого src -->
+                <img id="image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Original image">
+            </div>
+
+            <div class="controls">
+                <button id="cropBtn" class="btn" disabled="">Обрезать</button>
+                <button id="downloadBtn" class="btn" disabled="">Скачать результат</button>
+            </div>
+
+            <div class="result-container">
+                <h3>Результат:</h3>
+                <div class="result-image-wrapper">
+                    <!-- Аналогично для результата -->
+                    <img id="resultImage" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Cropped image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/photo-cropper.0f77c784.js"></script>
+
+
+</body></html>

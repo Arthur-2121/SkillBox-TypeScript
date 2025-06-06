@@ -1,0 +1,17 @@
+{
+  "name": "photo-cropper",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel serve src/index.html --open",
+    "build": "parcel build src/index.html --dist-dir dist"
+  },
+  "dependencies": {
+    "cropperjs": "^1.5.12"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ]
+}
